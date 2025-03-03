@@ -51,15 +51,15 @@
 
   // [START solar_potential_calculations]
   // Solar configuration, from buildingInsights.solarPotential.solarPanelConfigs
-  let panelsCount = 20;
-  let yearlyEnergyDcKwh = 12000;
+  let panelsCount = 12;
+  let yearlyEnergyDcKwh = 3600;
 
   // Basic settings
-  let monthlyAverageEnergyBill: number = 300;
-  let energyCostPerKwh = 0.31;
-  let panelCapacityWatts = 400;
-  let solarIncentives: number = 7000;
-  let installationCostPerWatt: number = 4.0;
+  let monthlyAverageEnergyBill: number = 125;
+  let energyCostPerKwh = 0.24;
+  let panelCapacityWatts = 450;
+  let solarIncentives: number = 0;
+  let installationCostPerWatt: number = 1.0;
   let installationLifeSpan: number = 20;
 
   // Advanced settings
@@ -213,15 +213,7 @@
       <p class="relative inline-flex items-center space-x-2">
         <md-icon class="md:w-6 w-8">info</md-icon>
         <span>
-          Projections use a
-          <a
-            class="primary-text"
-            href="https://developers.google.com/maps/documentation/solar/calculate-costs-us"
-            target="_blank"
-          >
-            USA financial model
-            <md-icon class="text-sm">open_in_new</md-icon>
-          </a>
+          Projections use a UK financial model
         </span>
       </p>
     </div>
